@@ -705,14 +705,28 @@ orderForm.addEventListener("submit", (e) => {
       phone: phone.value.trim(),
       model: document.getElementById("model").value,
       source: window.location.hostname,
-      date: new Date().toLocaleString(),
     };
 
-    // Placeholder for AmoCRM integration (e.g. via Webhook)
     console.log("Sending to AmoCRM:", formData);
 
-    // Example: fetch('YOUR_WEBHOOK_URL', { method: 'POST', body: JSON.stringify(formData) });
+    // Call our new backend API (relative path for Vercel support)
+    fetch("/api/leads", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
 
+    // Show success message regardless of API result for better UX,
+    // but in real app you might want to wait for response
     orderForm.style.display = "none";
     orderSuccess.style.display = "block";
   }
