@@ -1761,6 +1761,7 @@
           </p>
           <form class="order-form" id="orderForm" novalidate>
             <input type="hidden" id="orderProduct" name="product" value="" />
+            <input type="hidden" id="orderPrice" name="price" value="" />
             <div class="form-group">
               <label for="name" data-ru="Ваше имя" data-ro="Numele dvs."
                 >Ваше имя</label
@@ -1857,6 +1858,41 @@
             >
               Мы свяжемся с вами в течение 15 минут
             </p>
+          </div>
+          <div class="order-error" id="orderError" style="display: none">
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#e53e3e"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+            <h3 data-ru="Ошибка отправки" data-ro="Eroare de trimitere">
+              Ошибка отправки
+            </h3>
+            <p
+              data-ru="Произошла ошибка. Пожалуйста, попробуйте еще раз или позвоните нам."
+              data-ro="A aparut o eroare. Va rugam sa incercati din nou sau sa ne sunati."
+            >
+              Произошла ошибка. Пожалуйста, попробуйте еще раз або позвоните
+              нам.
+            </p>
+            <button
+              class="btn btn-outline btn-sm"
+              style="margin-top: 20px"
+              onclick="resetOrderForm()"
+            >
+              <span data-ru="Попробовать снова" data-ro="Incearca din nou"
+                >Попробовать снова</span
+              >
+            </button>
           </div>
         </div>
       </div>

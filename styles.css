@@ -1280,21 +1280,31 @@ ul {
   text-decoration: underline;
 }
 
-.order-success {
+.order-success,
+.order-error {
   text-align: center;
   padding: 40px 0;
 }
 
-.order-success h3 {
+.order-success h3,
+.order-error h3 {
   font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 800;
-  color: var(--color-text);
   margin-top: 16px;
   margin-bottom: 8px;
 }
 
-.order-success p {
+.order-success h3 {
+  color: var(--color-primary);
+}
+
+.order-error h3 {
+  color: #e53e3e;
+}
+
+.order-success p,
+.order-error p {
   font-size: 16px;
   color: var(--color-text-secondary);
 }

@@ -15,6 +15,7 @@ const products = [
     },
     priceOld: { ru: "12 500 lei", ro: "12 500 lei" },
     priceCurrent: { ru: "9 900 lei", ro: "9 900 lei" },
+    priceValue: 9900,
     specs: {
       ru: [
         "<strong>Размер:</strong> 4.0 x 2.5 м (10 м\u00b2)",
@@ -66,6 +67,7 @@ const products = [
     },
     priceOld: { ru: "18 500 lei", ro: "18 500 lei" },
     priceCurrent: { ru: "14 900 lei", ro: "14 900 lei" },
+    priceValue: 14900,
     specs: {
       ru: [
         "<strong>Размер:</strong> 4.0 x 3.0 м (12 м\u00b2)",
@@ -117,6 +119,7 @@ const products = [
     },
     priceOld: { ru: "24 500 lei", ro: "24 500 lei" },
     priceCurrent: { ru: "19 900 lei", ro: "19 900 lei" },
+    priceValue: 19900,
     specs: {
       ru: [
         "<strong>Размер:</strong> 4.5 x 3.0 м (13.5 м\u00b2)",
@@ -168,6 +171,7 @@ const products = [
     },
     priceOld: { ru: "29 000 lei", ro: "29 000 lei" },
     priceCurrent: { ru: "24 500 lei", ro: "24 500 lei" },
+    priceValue: 24500,
     specs: {
       ru: [
         "<strong>Размер:</strong> 5.0 x 2.5 м (12.5 м\u00b2)",
@@ -219,6 +223,7 @@ const products = [
     },
     priceOld: { ru: "35 000 lei", ro: "35 000 lei" },
     priceCurrent: { ru: "28 900 lei", ro: "28 900 lei" },
+    priceValue: 28900,
     specs: {
       ru: [
         "<strong>Размер:</strong> 6.0 x 3.0 м (18 м\u00b2)",
@@ -270,6 +275,7 @@ const products = [
     },
     priceOld: { ru: "42 000 lei", ro: "42 000 lei" },
     priceCurrent: { ru: "35 500 lei", ro: "35 500 lei" },
+    priceValue: 35500,
     specs: {
       ru: [
         "<strong>Размер:</strong> 8.0 x 3.0 м (24 м\u00b2)",
@@ -321,6 +327,7 @@ const products = [
     },
     priceOld: { ru: "52 000 lei", ro: "52 000 lei" },
     priceCurrent: { ru: "43 900 lei", ro: "43 900 lei" },
+    priceValue: 43900,
     specs: {
       ru: [
         "<strong>Размер:</strong> 10.0 x 3.0 м (30 м\u00b2)",
@@ -375,6 +382,7 @@ const products = [
     },
     priceOld: { ru: "62 000 lei", ro: "62 000 lei" },
     priceCurrent: { ru: "52 900 lei", ro: "52 900 lei" },
+    priceValue: 52900,
     specs: {
       ru: [
         "<strong>Размер:</strong> 10.0 x 3.0 м (30 м\u00b2)",
@@ -461,10 +469,27 @@ function populateOrderSelect() {
   products.forEach((p) => {
     const opt = document.createElement("option");
     opt.value = p.name[currentLang];
+    opt.dataset.price = p.priceValue;
     opt.textContent = `${p.name[currentLang]} \u2014 ${p.priceCurrent[currentLang]}`;
     select.appendChild(opt);
   });
 }
+
+// ===== UPDATE PRICE FIELD =====
+function updateOrderPrice() {
+  const select = document.getElementById("model");
+  const priceInput = document.getElementById("orderPrice");
+  const selectedOption = select.options[select.selectedIndex];
+
+  if (selectedOption && selectedOption.dataset.price) {
+    priceInput.value = selectedOption.dataset.price;
+    console.log("Updated order price:", priceInput.value);
+  } else {
+    priceInput.value = "";
+  }
+}
+
+document.getElementById("model").addEventListener("change", updateOrderPrice);
 
 // ===== PRODUCT DETAIL MODAL =====
 function openProductModal(id) {
@@ -521,10 +546,12 @@ function openOrderModal(productName) {
   const modal = document.getElementById("orderModal");
   const form = document.getElementById("orderForm");
   const success = document.getElementById("orderSuccess");
+  const error = document.getElementById("orderError");
 
   // Reset form
   form.style.display = "flex";
   success.style.display = "none";
+  if (error) error.style.display = "none";
   form.reset();
 
   // Populate select
@@ -541,6 +568,9 @@ function openOrderModal(productName) {
       }
     }
   }
+
+  // Update hidden price field
+  updateOrderPrice();
 
   modal.classList.add("active");
   document.body.style.overflow = "hidden";
@@ -604,6 +634,28 @@ function switchLanguage(lang) {
 
   // Re-populate order select
   populateOrderSelect();
+}
+
+// ===== RESET ORDER FORM =====
+function resetOrderForm() {
+  const form = document.getElementById("orderForm");
+  const success = document.getElementById("orderSuccess");
+  const error = document.getElementById("orderError");
+
+  form.style.display = "flex";
+  success.style.display = "none";
+  error.style.display = "none";
+  form.reset();
+
+  // Reset error classes
+  form.querySelectorAll(".error").forEach((el) => el.classList.remove("error"));
+
+  // Reset submit button
+  const submitBtn = form.querySelector('button[type="submit"]');
+  if (submitBtn) {
+    submitBtn.disabled = false;
+    submitBtn.style.opacity = "1";
+  }
 }
 
 // ===== BURGER MENU =====
@@ -683,8 +735,9 @@ orderForm.addEventListener("submit", (e) => {
 
   const name = document.getElementById("name");
   const phone = document.getElementById("phone");
+  const siteUrl = window.location.href;
   let valid = true;
-
+  console.log(siteUrl);
   name.classList.remove("error");
   phone.classList.remove("error");
 
@@ -699,36 +752,65 @@ orderForm.addEventListener("submit", (e) => {
   }
 
   if (valid) {
+    const submitBtn = orderForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
+
+    // Block button
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = "0.7";
+    submitBtn.innerHTML =
+      currentLang === "ru" ? "Отправка..." : "Se trimite...";
+
+    const price = document.getElementById("orderPrice").value;
+    const priceInt = parseInt(String(price).replace(/[^\d]/g, ""), 10) || 0;
+
     // Collect data for AmoCRM
     const formData = {
       name: name.value.trim(),
       phone: phone.value.trim(),
       model: document.getElementById("model").value,
-      source: window.location.hostname,
+      price: priceInt,
+      siteUrl: siteUrl,
     };
 
     console.log("Sending to AmoCRM:", formData);
 
-    // Call our new backend API (relative path for Vercel support)
-    fetch("/api/leads", {
+    // Call our new backend API (using relative path)
+    fetch("http://localhost:3000/api/leads", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => response.json())
+      .then(async (response) => {
+        const data = await response.json();
+        if (!response.ok) {
+          console.error("Server error data:", data);
+          throw new Error(data.error || "Network response was not ok");
+        }
+        return data;
+      })
       .then((data) => {
         console.log("Success:", data);
+        orderForm.style.display = "none";
+        orderSuccess.style.display = "block";
+        orderError.style.display = "none";
       })
       .catch((error) => {
         console.error("Error:", error);
+        orderForm.style.display = "none";
+        orderSuccess.style.display = "none";
+        orderError.style.display = "block";
+      })
+      .finally(() => {
+        // Small delay for UI and then reset button state if form still visible (shouldn't be)
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = "1";
+          submitBtn.innerHTML = originalBtnText;
+        }, 500);
       });
-
-    // Show success message regardless of API result for better UX,
-    // but in real app you might want to wait for response
-    orderForm.style.display = "none";
-    orderSuccess.style.display = "block";
   }
 });
 
