@@ -776,7 +776,7 @@ orderForm.addEventListener("submit", (e) => {
     console.log("Sending to AmoCRM:", formData);
 
     // Call our new backend API (using relative path)
-    fetch("http://localhost:3000/api/leads", {
+    fetch("/api/leads", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
