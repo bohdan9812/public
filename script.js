@@ -8,7 +8,10 @@ const products = [
     image: "images/products/SERĂ_400×250×200cm.png",
     badge: { ru: "Хит продаж", ro: "Bestseller" },
     badgeClass: "",
-    name: { ru: "EcoSera 4.0 x 2.5m", ro: "EcoSera 4.0 x 2.5m" },
+    name: {
+      ru: "Sera Tunel 4.0 x 2.5 метров",
+      ro: "Sera Tunel 4.0 x 2.5 metri",
+    },
     shortSpecs: {
       ru: "4.0 x 2.5 м \u2022 Каркас 1.2 мм \u2022 Поликарбонат 4мм",
       ro: "4.0 x 2.5 m \u2022 Cadru 1.2 mm \u2022 Policarbonat 4mm",
@@ -60,7 +63,10 @@ const products = [
     image: "images/products/SERĂ_400×300×200cm.png",
     badge: { ru: "Популярный", ro: "Popular" },
     badgeClass: "popular",
-    name: { ru: "EcoSera 4.0 x 3.0m", ro: "EcoSera 4.0 x 3.0m" },
+    name: {
+      ru: "Sera Tunel 4.0 x 3.0 метров",
+      ro: "Sera Tunel 4.0 x 3.0 metri",
+    },
     shortSpecs: {
       ru: "4.0 x 3.0 м \u2022 Каркас 1.2 мм \u2022 Поликарбонат 4мм",
       ro: "4.0 x 3.0 m \u2022 Cadru 1.2 mm \u2022 Policarbonat 4mm",
@@ -112,7 +118,10 @@ const products = [
     image: "images/products/SERĂ_450×300×200cm.png",
     badge: null,
     badgeClass: "",
-    name: { ru: "EcoSera 4.5 x 3.0m", ro: "EcoSera 4.5 x 3.0m" },
+    name: {
+      ru: "Sera Tunel 4.5 x 3.0 метров",
+      ro: "Sera Tunel 4.5 x 3.0 metri",
+    },
     shortSpecs: {
       ru: "4.5 x 3.0 м \u2022 Каркас 1.2 мм \u2022 Поликарбонат 4мм",
       ro: "4.5 x 3.0 m \u2022 Cadru 1.2 mm \u2022 Policarbonat 4mm",
@@ -164,7 +173,10 @@ const products = [
     image: "images/products/SERĂ_500×250×200cm.png",
     badge: null,
     badgeClass: "",
-    name: { ru: "EcoSera 5.0 x 2.5m", ro: "EcoSera 5.0 x 2.5m" },
+    name: {
+      ru: "Sera Tunel 5.0 x 2.5 метров",
+      ro: "Sera Tunel 5.0 x 2.5 metri",
+    },
     shortSpecs: {
       ru: "5.0 x 2.5 м \u2022 Усиленный каркас \u2022 Поликарбонат 6мм",
       ro: "5.0 x 2.5 m \u2022 Cadru ranforsat \u2022 Policarbonat 6mm",
@@ -216,7 +228,10 @@ const products = [
     image: "images/products/SERĂ_600×300×200cm.png",
     badge: { ru: "Лучшая цена", ro: "Cel mai bun pre\u021b" },
     badgeClass: "",
-    name: { ru: "EcoSera 6.0 x 3.0m", ro: "EcoSera 6.0 x 3.0m" },
+    name: {
+      ru: "Sera Tunel 6.0 x 3.0 метров",
+      ro: "Sera Tunel 6.0 x 3.0 metri",
+    },
     shortSpecs: {
       ru: "6.0 x 3.0 м \u2022 Усиленный каркас \u2022 Поликарбонат 6мм",
       ro: "6.0 x 3.0 m \u2022 Cadru ranforsat \u2022 Policarbonat 6mm",
@@ -268,7 +283,10 @@ const products = [
     image: "images/products/SERĂ_800×300×200cm.png",
     badge: null,
     badgeClass: "",
-    name: { ru: "EcoSera 8.0 x 3.0m", ro: "EcoSera 8.0 x 3.0m" },
+    name: {
+      ru: "Sera Tunel 8.0 x 3.0 метров",
+      ro: "Sera Tunel 8.0 x 3.0 metri",
+    },
     shortSpecs: {
       ru: "8.0 x 3.0 м \u2022 Усиленный каркас \u2022 Поликарбонат 6мм",
       ro: "8.0 x 3.0 m \u2022 Cadru ranforsat \u2022 Policarbonat 6mm",
@@ -320,7 +338,10 @@ const products = [
     image: "images/products/SERĂ_1000×300×200cm.png",
     badge: { ru: "Премиум", ro: "Premium" },
     badgeClass: "popular",
-    name: { ru: "EcoSera 10.0 x 3.0m", ro: "EcoSera 10.0 x 3.0m" },
+    name: {
+      ru: "Sera Tunel 10.0 x 3.0 метров",
+      ro: "Sera Tunel 10.0 x 3.0 metri",
+    },
     shortSpecs: {
       ru: "10.0 x 3.0 м \u2022 Премиум каркас \u2022 Поликарбонат 6мм",
       ro: "10.0 x 3.0 m \u2022 Cadru premium \u2022 Policarbonat 6mm",
@@ -373,8 +394,8 @@ const products = [
     badge: null,
     badgeClass: "",
     name: {
-      ru: "EcoSera 10.0 x 3.0m (High)",
-      ro: "EcoSera 10.0 x 3.0m (High)",
+      ru: "Sera Tunel 10.0 x 3.0 метров",
+      ro: "Sera Tunel 10.0 x 3.0 metri",
     },
     shortSpecs: {
       ru: "10.0 x 3.0 м \u2022 Премиум каркас \u2022 Поликарбонат 6мм",
