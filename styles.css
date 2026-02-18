@@ -605,8 +605,8 @@ ul {
   gap: 6px;
   font-size: 13px;
   font-weight: 600;
-  color: var(--color-primary);
-  background: var(--color-primary-light);
+  color: var(--color-primary-light);
+  background: var(--color-primary);
   padding: 6px 10px;
   border-radius: var(--radius-sm);
   margin-bottom: 16px;
