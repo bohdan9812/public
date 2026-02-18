@@ -19,7 +19,7 @@ const products = [
     specs: {
       ru: [
         "<strong>Размер:</strong> 4.0 x 2.5 м (10 м\u00b2)",
-        "<strong>Каркас:</strong> оцинкованная сталь, 1.2 мм",
+        "<strong>Усиленный оцинкованный каркас 1.2 мм — не ржавеет и не деформируется</strong>",
         "<strong>Покрытие:</strong> поликарбонат 4 мм с UV-защитой",
         "<strong>Высота:</strong> 2.0 м",
         "<strong>Шаг дуг:</strong> 65 см",
@@ -27,7 +27,7 @@ const products = [
       ],
       ro: [
         "<strong>Dimensiune:</strong> 4.0 x 2.5 m (10 m\u00b2)",
-        "<strong>Cadru:</strong> o\u021bel galvanizat, 1.2 mm",
+        "<strong>Cadru galvanizat ranforsat de 1,2 mm - nu ruginește și nu se deformează</strong>",
         "<strong>Acoperire:</strong> policarbonat 4 mm cu protec\u021bie UV",
         "<strong>\u00cenaltime:</strong> 2.0 m",
         "<strong>Pasul arcurilor:</strong> 65 cm",
@@ -71,7 +71,7 @@ const products = [
     specs: {
       ru: [
         "<strong>Размер:</strong> 4.0 x 3.0 м (12 м\u00b2)",
-        "<strong>Каркас:</strong> оцинкованная сталь, 1.2 мм",
+        "<strong>Усиленный оцинкованный каркас 1.2 мм — не ржавеет и не деформируется</strong>",
         "<strong>Покрытие:</strong> поликарбонат 4 мм с UV-защитой",
         "<strong>Высота:</strong> 2.0 м",
         "<strong>Шаг дуг:</strong> 65 см",
@@ -79,7 +79,7 @@ const products = [
       ],
       ro: [
         "<strong>Dimensiune:</strong> 4.0 x 3.0 m (12 m\u00b2)",
-        "<strong>Cadru:</strong> o\u021bel galvanizat, 1.2 mm",
+        "<strong>Cadru galvanizat ranforsat de 1,2 mm - nu ruginește și nu se deformează</strong>",
         "<strong>Acoperire:</strong> policarbonat 4 mm cu protec\u021bie UV",
         "<strong>\u00cenaltime:</strong> 2.0 m",
         "<strong>Pasul arcurilor:</strong> 65 cm",
@@ -123,7 +123,7 @@ const products = [
     specs: {
       ru: [
         "<strong>Размер:</strong> 4.5 x 3.0 м (13.5 м\u00b2)",
-        "<strong>Каркас:</strong> оцинкованная сталь, 1.2 мм",
+        "<strong>Усиленный оцинкованный каркас 1.2 мм — не ржавеет и не деформируется</strong>",
         "<strong>Покрытие:</strong> поликарбонат 4 мм с UV-защитой",
         "<strong>Высота:</strong> 2.0 м",
         "<strong>Шаг дуг:</strong> 65 см",
@@ -131,7 +131,7 @@ const products = [
       ],
       ro: [
         "<strong>Dimensiune:</strong> 4.5 x 3.0 m (13.5 m\u00b2)",
-        "<strong>Cadru:</strong> o\u021bel galvanizat, 1.2 mm",
+        "<strong>Cadru galvanizat ranforsat de 1,2 mm - nu ruginește și nu se deformează</strong>",
         "<strong>Acoperire:</strong> policarbonat 4 mm cu protec\u021bie UV",
         "<strong>\u00cenaltime:</strong> 2.0 m",
         "<strong>Pasul arcurilor:</strong> 65 cm",
@@ -175,7 +175,7 @@ const products = [
     specs: {
       ru: [
         "<strong>Размер:</strong> 5.0 x 2.5 м (12.5 м\u00b2)",
-        "<strong>Каркас:</strong> усиленная оцинкованная сталь, 1.5 мм",
+        "<strong>Усиленный оцинкованный каркас 1.2 мм — не ржавеет и не деформируется</strong>",
         "<strong>Покрытие:</strong> поликарбонат 6 мм с UV-защитой",
         "<strong>Высота:</strong> 2.0 м",
         "<strong>Шаг дуг:</strong> 50 см (усиленный)",
@@ -183,7 +183,7 @@ const products = [
       ],
       ro: [
         "<strong>Dimensiune:</strong> 5.0 x 2.5 m (12.5 m\u00b2)",
-        "<strong>Cadru:</strong> o\u021bel galvanizat ranforsat, 1.5 mm",
+        "<strong>Cadru galvanizat ranforsat de 1,2 mm - nu ruginește și nu se deformează</strong>",
         "<strong>Acoperire:</strong> policarbonat 6 mm cu protec\u021bie UV",
         "<strong>\u00cenaltime:</strong> 2.0 m",
         "<strong>Pasul arcurilor:</strong> 50 cm (ranforsat)",
@@ -227,7 +227,7 @@ const products = [
     specs: {
       ru: [
         "<strong>Размер:</strong> 6.0 x 3.0 м (18 м\u00b2)",
-        "<strong>Каркас:</strong> усиленная оцинкованная сталь, 1.5 мм",
+        "<strong>Усиленный оцинкованный каркас 1.2 мм — не ржавеет и не деформируется</strong>",
         "<strong>Покрытие:</strong> поликарбонат 6 мм с UV-защитой",
         "<strong>Высота:</strong> 2.0 м",
         "<strong>Шаг дуг:</strong> 50 см",
@@ -235,7 +235,7 @@ const products = [
       ],
       ro: [
         "<strong>Dimensiune:</strong> 6.0 x 3.0 m (18 m\u00b2)",
-        "<strong>Cadru:</strong> o\u021bel galvanizat ranforsat, 1.5 mm",
+        "<strong>Cadru galvanizat ranforsat de 1,2 mm - nu ruginește și nu se deformează</strong>",
         "<strong>Acoperire:</strong> policarbonat 6 mm cu protec\u021bie UV",
         "<strong>\u00cenaltime:</strong> 2.0 m",
         "<strong>Pasul arcurilor:</strong> 50 cm",
@@ -279,7 +279,7 @@ const products = [
     specs: {
       ru: [
         "<strong>Размер:</strong> 8.0 x 3.0 м (24 м\u00b2)",
-        "<strong>Каркас:</strong> усиленная оцинкованная сталь, 1.5 мм",
+        "<strong>Усиленный оцинкованный каркас 1.2 мм — не ржавеет и не деформируется</strong>",
         "<strong>Покрытие:</strong> поликарбонат 6 мм с UV-защитой",
         "<strong>Высота:</strong> 2.0 м",
         "<strong>Шаг дуг:</strong> 50 см",
@@ -287,7 +287,7 @@ const products = [
       ],
       ro: [
         "<strong>Dimensiune:</strong> 8.0 x 3.0 m (24 m\u00b2)",
-        "<strong>Cadru:</strong> o\u021bel galvanizat ranforsat, 1.5 mm",
+        "<strong>Cadru galvanizat ranforsat de 1,2 mm - nu ruginește și nu se deformează</strong>",
         "<strong>Acoperire:</strong> policarbonat 6 mm cu protec\u021bie UV",
         "<strong>\u00cenaltime:</strong> 2.0 m",
         "<strong>Pasul arcurilor:</strong> 50 cm",
@@ -331,7 +331,7 @@ const products = [
     specs: {
       ru: [
         "<strong>Размер:</strong> 10.0 x 3.0 м (30 м\u00b2)",
-        "<strong>Каркас:</strong> премиум оцинкованная сталь, 1.5 мм",
+        "<strong>Усиленный оцинкованный каркас 1.2 мм — не ржавеет и не деформируется</strong>",
         "<strong>Покрытие:</strong> поликарбонат 6 мм с UV-защитой",
         "<strong>Высота:</strong> 2.0 м",
         "<strong>Шаг дуг:</strong> 50 см",
@@ -339,7 +339,7 @@ const products = [
       ],
       ro: [
         "<strong>Dimensiune:</strong> 10.0 x 3.0 m (30 m\u00b2)",
-        "<strong>Cadru:</strong> o\u021bel galvanizat premium, 1.5 mm",
+        "<strong>Cadru galvanizat ranforsat de 1,2 mm - nu ruginește și nu se deformează</strong>",
         "<strong>Acoperire:</strong> policarbonat 6 mm cu protec\u021bie UV",
         "<strong>\u00cenaltime:</strong> 2.0 m",
         "<strong>Pasul arcurilor:</strong> 50 cm",
@@ -386,7 +386,7 @@ const products = [
     specs: {
       ru: [
         "<strong>Размер:</strong> 10.0 x 3.0 м (30 м\u00b2)",
-        "<strong>Каркас:</strong> премиум оцинкованная сталь, 1.5 мм",
+        "<strong>Усиленный оцинкованный каркас 1.2 мм — не ржавеет и не деформируется</strong>",
         "<strong>Покрытие:</strong> поликарбонат 6 мм с UV-защитой",
         "<strong>Высота:</strong> 2.5 м",
         "<strong>Шаг дуг:</strong> 50 см",
@@ -394,7 +394,7 @@ const products = [
       ],
       ro: [
         "<strong>Dimensiune:</strong> 10.0 x 3.0 m (30 m\u00b2)",
-        "<strong>Cadru:</strong> o\u021bel galvanizat premium, 1.5 mm",
+        "<strong>Cadru galvanizat ranforsat de 1,2 mm - nu ruginește și nu se deformează</strong>",
         "<strong>Acoperire:</strong> policarbonat 6 mm cu protec\u021bie UV",
         "<strong>\u00cenaltime:</strong> 2.5 m",
         "<strong>Pasul arcurilor:</strong> 50 cm",
@@ -429,6 +429,7 @@ function renderCatalog() {
   const grid = document.getElementById("catalogGrid");
   const detailText = currentLang === "ru" ? "Подробнее" : "Detalii";
   const orderText = currentLang === "ru" ? "Заказать" : "Comanda";
+  const installmentText = currentLang === "ru" ? "0% рассрочка" : "0% în rate";
 
   grid.innerHTML = products
     .map(
@@ -445,6 +446,13 @@ function renderCatalog() {
         <div class="catalog-price">
           <span class="price-old">${p.priceOld[currentLang]}</span>
           <span class="price-current">${p.priceCurrent[currentLang]}</span>
+        </div>
+        <div class="installment-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="5" width="20" height="14" rx="2" />
+            <line x1="2" y1="10" x2="22" y2="10" />
+          </svg>
+          ${installmentText}
         </div>
         <div class="catalog-card-actions">
           <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); openProductModal(${p.id})">${detailText}</button>

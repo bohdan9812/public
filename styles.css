@@ -599,6 +599,25 @@ ul {
   color: var(--color-primary);
 }
 
+.installment-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  width: fit-content;
+}
+
+.installment-badge svg {
+  width: 16px;
+  height: 16px;
+}
+
 .catalog-card-actions {
   display: flex;
   gap: 8px;
@@ -1421,10 +1440,10 @@ ul {
   gap: 8px;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--color-white);
   background: var(--color-accent);
-  padding: 14px 32px;
+  padding: 10px 24px;
   border-radius: 100px;
   box-shadow: var(--shadow-xl);
   transition: all var(--transition);
@@ -1433,6 +1452,14 @@ ul {
 .floating-btn:hover {
   background: var(--color-accent-hover);
   transform: scale(1.02);
+}
+
+.reviews-footer {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 /* ===== RESPONSIVE ===== */
