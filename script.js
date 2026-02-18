@@ -430,6 +430,8 @@ function renderCatalog() {
   const detailText = currentLang === "ru" ? "Подробнее" : "Detalii";
   const orderText = currentLang === "ru" ? "Заказать" : "Comanda";
   const installmentText = currentLang === "ru" ? "0% рассрочка" : "0% în rate";
+  const freeDeliveryText =
+    currentLang === "ru" ? "Бесплатная доставка" : "Livrare gratuită";
 
   grid.innerHTML = products
     .map(
@@ -446,6 +448,24 @@ function renderCatalog() {
         <div class="catalog-price">
           <span class="price-old">${p.priceOld[currentLang]}</span>
           <span class="price-current">${p.priceCurrent[currentLang]}</span>
+        </div>
+        <div class="installment-badge">
+         <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="1" y="3" width="15" height="13" />
+          <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+          <circle cx="5.5" cy="18.5" r="2.5" />
+          <circle cx="18.5" cy="18.5" r="2.5" />
+        </svg>
+          ${freeDeliveryText}
         </div>
         <div class="installment-badge">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
